@@ -6,8 +6,8 @@ const App = () => (
   <Router>
     <div className='app-container'>
       <div className="page-header">
-        <h1 className="text-center">$0$ Hungry Avo</h1>
-        <small>A visual presentaion of how expensive grocery is in NZ</small>
+        <h1 className="text-center"> 😭 Food in NZ is so expensive 😭</h1>
+        <small id="sub-header">A visual presentaion of how much grocery you can buy with 2 hours of minimum wage</small>
       </div>
       <Route exact path="/" component={Plates} />
     </div>

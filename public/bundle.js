@@ -550,7 +550,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var _prodInvariant = __webpack_require__(3);
 
 var DOMProperty = __webpack_require__(16);
-var ReactDOMComponentFlags = __webpack_require__(75);
+var ReactDOMComponentFlags = __webpack_require__(74);
 
 var invariant = __webpack_require__(1);
 
@@ -810,7 +810,7 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(71)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(70)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
@@ -1289,7 +1289,7 @@ module.exports = { debugTool: debugTool };
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_1__Prompt__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Redirect__ = __webpack_require__(238);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_2__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(98);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_3__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(60);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__Router__["a"]; });
@@ -1340,9 +1340,9 @@ module.exports = { debugTool: debugTool };
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var CallbackQueue = __webpack_require__(73);
+var CallbackQueue = __webpack_require__(72);
 var PooledClass = __webpack_require__(17);
-var ReactFeatureFlags = __webpack_require__(78);
+var ReactFeatureFlags = __webpack_require__(77);
 var ReactReconciler = __webpack_require__(21);
 var Transaction = __webpack_require__(34);
 
@@ -2241,7 +2241,7 @@ var warning = __webpack_require__(2);
 var canDefineProperty = __webpack_require__(37);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-var REACT_ELEMENT_TYPE = __webpack_require__(101);
+var REACT_ELEMENT_TYPE = __webpack_require__(100);
 
 var RESERVED_PROPS = {
   key: true,
@@ -2652,7 +2652,7 @@ var DOMNamespaces = __webpack_require__(45);
 var setInnerHTML = __webpack_require__(36);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(52);
-var setTextContent = __webpack_require__(92);
+var setTextContent = __webpack_require__(91);
 
 var ELEMENT_NODE_TYPE = 1;
 var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -2945,7 +2945,7 @@ module.exports = ReactReconciler;
 
 var _assign = __webpack_require__(4);
 
-var ReactBaseClasses = __webpack_require__(100);
+var ReactBaseClasses = __webpack_require__(99);
 var ReactChildren = __webpack_require__(246);
 var ReactDOMFactories = __webpack_require__(247);
 var ReactElement = __webpack_require__(18);
@@ -2962,7 +2962,7 @@ var cloneElement = ReactElement.cloneElement;
 if (process.env.NODE_ENV !== 'production') {
   var lowPriorityWarning = __webpack_require__(62);
   var canDefineProperty = __webpack_require__(37);
-  var ReactElementValidator = __webpack_require__(102);
+  var ReactElementValidator = __webpack_require__(101);
   var didWarnPropTypesDeprecated = false;
   createElement = ReactElementValidator.createElement;
   createFactory = ReactElementValidator.createFactory;
@@ -3257,8 +3257,8 @@ var EventPluginRegistry = __webpack_require__(31);
 var EventPluginUtils = __webpack_require__(46);
 var ReactErrorUtils = __webpack_require__(50);
 
-var accumulateInto = __webpack_require__(85);
-var forEachAccumulated = __webpack_require__(86);
+var accumulateInto = __webpack_require__(84);
+var forEachAccumulated = __webpack_require__(85);
 var invariant = __webpack_require__(1);
 
 /**
@@ -3534,8 +3534,8 @@ module.exports = EventPluginHub;
 var EventPluginHub = __webpack_require__(26);
 var EventPluginUtils = __webpack_require__(46);
 
-var accumulateInto = __webpack_require__(85);
-var forEachAccumulated = __webpack_require__(86);
+var accumulateInto = __webpack_require__(84);
+var forEachAccumulated = __webpack_require__(85);
 var warning = __webpack_require__(2);
 
 var getListener = EventPluginHub.getListener;
@@ -4075,7 +4075,7 @@ var _assign = __webpack_require__(4);
 
 var EventPluginRegistry = __webpack_require__(31);
 var ReactEventEmitterMixin = __webpack_require__(176);
-var ViewportMetrics = __webpack_require__(84);
+var ViewportMetrics = __webpack_require__(83);
 
 var getVendorPrefixedEventName = __webpack_require__(211);
 var isEventSupported = __webpack_require__(56);
@@ -4401,7 +4401,7 @@ module.exports = ReactBrowserEventEmitter;
 
 
 var SyntheticUIEvent = __webpack_require__(29);
-var ViewportMetrics = __webpack_require__(84);
+var ViewportMetrics = __webpack_require__(83);
 
 var getEventModifierState = __webpack_require__(54);
 
@@ -4962,12 +4962,12 @@ module.exports = canDefineProperty;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(106);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(258);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(106);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "combineReducers", function() { return __WEBPACK_IMPORTED_MODULE_1__combineReducers__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "bindActionCreators", function() { return __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__["a"]; });
@@ -5358,7 +5358,7 @@ var ReactInstrumentation = __webpack_require__(11);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(52);
 var setInnerHTML = __webpack_require__(36);
-var setTextContent = __webpack_require__(92);
+var setTextContent = __webpack_require__(91);
 
 function getNodeAfter(parentNode, node) {
   // Special case for text components, which return [open, close] comments
@@ -5906,8 +5906,8 @@ module.exports = KeyEscapeUtils;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypesSecret = __webpack_require__(83);
-var propTypesFactory = __webpack_require__(70);
+var ReactPropTypesSecret = __webpack_require__(82);
+var propTypesFactory = __webpack_require__(69);
 
 var React = __webpack_require__(22);
 var PropTypes = propTypesFactory(React.isValidElement);
@@ -7367,25 +7367,6 @@ module.exports = lowPriorityWarning;
 
 /***/ }),
 /* 63 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(215);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
-
-
-
-
-
-
-/***/ }),
-/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7468,7 +7449,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 65 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7500,7 +7481,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7544,7 +7525,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7605,7 +7586,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 };
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7662,7 +7643,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7676,7 +7657,7 @@ var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
 
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7695,7 +7676,7 @@ var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
 // Therefore we re-export development-only version with all the PropTypes checks here.
 // However if one is migrating to the `prop-types` npm library, they will go through the
 // `index.js` entry point, and it will branch depending on the environment.
-var factory = __webpack_require__(71);
+var factory = __webpack_require__(70);
 module.exports = function(isValidElement) {
   // It is still allowed in 15.5.
   var throwOnDirectAccess = false;
@@ -7704,7 +7685,7 @@ module.exports = function(isValidElement) {
 
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8224,7 +8205,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8383,7 +8364,7 @@ var CSSProperty = {
 module.exports = CSSProperty;
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8508,7 +8489,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8749,7 +8730,7 @@ module.exports = DOMPropertyOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8772,7 +8753,7 @@ var ReactDOMComponentFlags = {
 module.exports = ReactDOMComponentFlags;
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8978,7 +8959,7 @@ module.exports = ReactDOMSelect;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9013,7 +8994,7 @@ ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 module.exports = ReactEmptyComponent;
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9040,7 +9021,7 @@ var ReactFeatureFlags = {
 module.exports = ReactFeatureFlags;
 
 /***/ }),
-/* 79 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9114,7 +9095,7 @@ module.exports = ReactHostComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9133,8 +9114,8 @@ module.exports = ReactHostComponent;
 var ReactDOMSelection = __webpack_require__(167);
 
 var containsNode = __webpack_require__(119);
-var focusNode = __webpack_require__(65);
-var getActiveElement = __webpack_require__(66);
+var focusNode = __webpack_require__(64);
+var getActiveElement = __webpack_require__(65);
 
 function isInDocument(node) {
   return containsNode(document.documentElement, node);
@@ -9242,7 +9223,7 @@ var ReactInputSelection = {
 module.exports = ReactInputSelection;
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9268,7 +9249,7 @@ var ReactCurrentOwner = __webpack_require__(14);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMContainerInfo = __webpack_require__(159);
 var ReactDOMFeatureFlags = __webpack_require__(161);
-var ReactFeatureFlags = __webpack_require__(78);
+var ReactFeatureFlags = __webpack_require__(77);
 var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(11);
 var ReactMarkupChecksum = __webpack_require__(181);
@@ -9277,7 +9258,7 @@ var ReactUpdateQueue = __webpack_require__(51);
 var ReactUpdates = __webpack_require__(13);
 
 var emptyObject = __webpack_require__(30);
-var instantiateReactComponent = __webpack_require__(90);
+var instantiateReactComponent = __webpack_require__(89);
 var invariant = __webpack_require__(1);
 var setInnerHTML = __webpack_require__(36);
 var shouldUpdateReactComponent = __webpack_require__(57);
@@ -9786,7 +9767,7 @@ module.exports = ReactMount;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 82 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9832,7 +9813,7 @@ module.exports = ReactNodeTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9854,7 +9835,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9884,7 +9865,7 @@ var ViewportMetrics = {
 module.exports = ViewportMetrics;
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9948,7 +9929,7 @@ module.exports = accumulateInto;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9984,7 +9965,7 @@ function forEachAccumulated(arr, cb, scope) {
 module.exports = forEachAccumulated;
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10000,7 +9981,7 @@ module.exports = forEachAccumulated;
 
 
 
-var ReactNodeTypes = __webpack_require__(82);
+var ReactNodeTypes = __webpack_require__(81);
 
 function getHostComponentFromComposite(inst) {
   var type;
@@ -10019,7 +10000,7 @@ function getHostComponentFromComposite(inst) {
 module.exports = getHostComponentFromComposite;
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10057,7 +10038,7 @@ function getTextContentAccessor() {
 module.exports = getTextContentAccessor;
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10185,7 +10166,7 @@ var inputValueTracking = {
 module.exports = inputValueTracking;
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10205,8 +10186,8 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var ReactCompositeComponent = __webpack_require__(156);
-var ReactEmptyComponent = __webpack_require__(77);
-var ReactHostComponent = __webpack_require__(79);
+var ReactEmptyComponent = __webpack_require__(76);
+var ReactHostComponent = __webpack_require__(78);
 
 var getNextDebugID = __webpack_require__(254);
 var invariant = __webpack_require__(1);
@@ -10320,7 +10301,7 @@ module.exports = instantiateReactComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10376,7 +10357,7 @@ function isTextInputElement(elem) {
 module.exports = isTextInputElement;
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10433,7 +10414,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setTextContent;
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10615,19 +10596,19 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = connectAdvanced;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(95);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -10903,14 +10884,14 @@ selectorFactory) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["b"] = wrapMapToPropsConstant;
 /* unused harmony export getDependsOnOwnProps */
 /* harmony export (immutable) */ __webpack_exports__["a"] = wrapMapToPropsFunc;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(96);
 
 
 function wrapMapToPropsConstant(getConstant) {
@@ -10981,7 +10962,7 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11005,7 +10986,7 @@ var storeShape = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.shape({
 });
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11022,7 +11003,7 @@ function verifyPlainObject(value, displayName, methodName) {
 }
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11125,7 +11106,7 @@ Link.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11269,7 +11250,7 @@ Route.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Route);
 
 /***/ }),
-/* 100 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11288,7 +11269,7 @@ Route.childContextTypes = {
 var _prodInvariant = __webpack_require__(23),
     _assign = __webpack_require__(4);
 
-var ReactNoopUpdateQueue = __webpack_require__(103);
+var ReactNoopUpdateQueue = __webpack_require__(102);
 
 var canDefineProperty = __webpack_require__(37);
 var emptyObject = __webpack_require__(30);
@@ -11418,7 +11399,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 101 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11443,7 +11424,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 102 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11473,7 +11454,7 @@ var ReactElement = __webpack_require__(18);
 var checkReactTypeSpec = __webpack_require__(252);
 
 var canDefineProperty = __webpack_require__(37);
-var getIteratorFn = __webpack_require__(104);
+var getIteratorFn = __webpack_require__(103);
 var warning = __webpack_require__(2);
 var lowPriorityWarning = __webpack_require__(62);
 
@@ -11704,7 +11685,7 @@ module.exports = ReactElementValidator;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 103 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11805,7 +11786,7 @@ module.exports = ReactNoopUpdateQueue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 104 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11851,7 +11832,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11890,7 +11871,7 @@ function compose() {
 }
 
 /***/ }),
-/* 106 */
+/* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12149,7 +12130,7 @@ var ActionTypes = {
 }
 
 /***/ }),
-/* 107 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12177,7 +12158,7 @@ function warning(message) {
 }
 
 /***/ }),
-/* 108 */
+/* 107 */
 /***/ (function(module, exports) {
 
 var g;
@@ -12204,7 +12185,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 109 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12239,12 +12220,12 @@ var App = function App() {
         _react2.default.createElement(
           'h1',
           { className: 'text-center' },
-          '$0$ Hungry Avo'
+          ' \uD83D\uDE2D Food in NZ is so expensive \uD83D\uDE2D'
         ),
         _react2.default.createElement(
           'small',
-          null,
-          'A visual presentaion of how expensive grocery is in NZ'
+          { id: 'sub-header' },
+          'A visual presentaion of how much grocery you can buy with 2 hours of minimum wage'
         )
       ),
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Plates2.default })
@@ -12255,7 +12236,7 @@ var App = function App() {
 exports.default = App;
 
 /***/ }),
-/* 110 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12278,13 +12259,32 @@ exports.default = (0, _redux.combineReducers)({
 });
 
 /***/ }),
-/* 111 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = __webpack_require__(157);
+
+
+/***/ }),
+/* 111 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(215);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
+
+
+
+
 
 
 /***/ }),
@@ -12333,8 +12333,6 @@ var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(63);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -12358,687 +12356,581 @@ var Plates = function (_React$Component) {
   }
 
   _createClass(Plates, [{
-    key: 'onHover',
+    key: "onHover",
     value: function onHover() {}
   }, {
-    key: 'onLeave',
+    key: "onLeave",
     value: function onLeave() {}
   }, {
-    key: 'onClick',
+    key: "onClick",
     value: function onClick() {
       this.state.showPrice ? this.setState({ showPrice: false }) : this.setState({ showPrice: true });
     }
   }, {
-    key: 'render',
+    key: "render",
     value: function render() {
+      var X = 1.06;
+      var Y = 1.75;
       return _react2.default.createElement(
-        'div',
-        { className: 'container-fluid' },
+        "div",
+        { className: "container-fluid" },
         _react2.default.createElement(
-          'div',
-          { className: 'row' },
+          "div",
+          { className: "row" },
           _react2.default.createElement(
-            'div',
-            { className: 'col-md-12' },
+            "div",
+            { className: "col-md-4" },
             _react2.default.createElement(
-              'h2',
+              "h2",
               null,
-              'New Zealand'
+              "New Zealand \uD83C\uDDF3\uD83C\uDDFF"
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'row' },
+              "h5",
+              null,
+              "Minimum wage: ",
               _react2.default.createElement(
-                'div',
-                { className: 'col-md-3' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Minimum wage: $15.75 ',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'https://www.govt.nz/browse/work/workers-rights/minimum-wage-in-new-zealand/' },
-                      'source'
-                    )
-                  )
-                )
-              ),
+                "a",
+                { href: "https://www.govt.nz/browse/work/workers-rights/minimum-wage-in-new-zealand/" },
+                "$15.75/hour"
+              )
+            ),
+            _react2.default.createElement("div", { className: "divider" }),
+            _react2.default.createElement(
+              "p",
+              { className: "text-center" },
               _react2.default.createElement(
-                'div',
-                { className: 'col-md-2' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Weekly income: $',
-                  15.75 * 40
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-md-4' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'A week\'s rent in Wellington: $',
-                  34 * 7,
-                  ' ',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'http://www.hostelworld.com/hosteldetails.php/YHA-Wellington-City/Wellington/11840?dateFrom=2017-08-30&dateTo=2017-08-31&number_of_guests=1' },
-                      'source'
-                    )
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-md-3' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Budget per meal: $',
-                  Math.round((15.75 * 40 - 34 * 7) / 7 / 3)
-                )
+                "a",
+                { href: "https://shop.countdown.co.nz/?gclid=Cj0KCQjwwevLBRCGARIsAKnAJve4NVJ2VStL74YD0FzrBnPLxuArGtmsYLpx_V-c00Ip4S4FRcxvu6gaAgUbEALw_wcB#url=/Shop/ProductDetails%3Fstockcode%3D290642%26name%3Dbutchery-barnwell-chicken-breast-boneless-skin-on-large-pk%26searchString%3Dchicken%2Bbreast" },
+                "Shopping Receipt"
               )
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'row' },
+              "div",
+              { className: "row" },
               _react2.default.createElement(
-                'div',
-                { className: 'col-md-12' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Shopping Bag  | Total Price: $18.72 ',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'https://shop.countdown.co.nz/?gclid=Cj0KCQjwwevLBRCGARIsAKnAJve4NVJ2VStL74YD0FzrBnPLxuArGtmsYLpx_V-c00Ip4S4FRcxvu6gaAgUbEALw_wcB#url=/Shop/ProductDetails%3Fstockcode%3D290642%26name%3Dbutchery-barnwell-chicken-breast-boneless-skin-on-large-pk%26searchString%3Dchicken%2Bbreast' },
-                      'source'
-                    )
-                  )
-                )
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "bread", src: "https://s-media-cache-ak0.pinimg.com/originals/7c/a1/4e/7ca14e8de6f19d4e01e28b1527d3538c.png", alt: "bread" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Bread | $1.00/bag(600g)"
               )
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'row plate' },
+              "div",
+              { className: "row" },
               _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'chicken', src: 'https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450', alt: 'chicken breast' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Chicken',
-                  _react2.default.createElement('br', null),
-                  '$1.10/100G '
-                )
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "milk", src: "https://www.anchor.co.nz/app/uploads/2017/04/10351_Anchor_2L_Blue2.png", alt: "milk" })
               ),
               _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'food-image' },
-                  _react2.default.createElement('img', { id: 'potato', src: 'https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300', alt: 'potato' }),
-                  _react2.default.createElement('img', { id: 'potato', src: 'https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300', alt: 'potato' })
-                ),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Potato',
-                  _react2.default.createElement('br', null),
-                  '$2/1000G'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'food-image' },
-                  _react2.default.createElement('img', { id: 'bread', src: 'http://i.imgur.com/XiaV9TH.png', alt: 'bread' }),
-                  _react2.default.createElement('img', { id: 'bread', src: 'http://i.imgur.com/XiaV9TH.png', alt: 'bread' })
-                ),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Bread',
-                  _react2.default.createElement('br', null),
-                  '$0.40/100G'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'milk', src: 'http://www.charlamahon.com/wp-content/uploads/2016/01/Glass-of-Milk.png', alt: 'milk' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Milk',
-                  _react2.default.createElement('br', null),
-                  '$1.98/1L'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'beer', src: 'http://www.kingdomliquor.com/wp-content/uploads/2014/10/Heineken-Bottle.png', alt: 'beer' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Beer',
-                  _react2.default.createElement('br', null),
-                  '$4.99/500ML'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'broccoli', src: 'https://www.myjuicecleanse.com/wp-content/uploads/2013/07/broccoli-med.png', alt: 'broccoli' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Brocolli',
-                  _react2.default.createElement('br', null),
-                  '$2.79/head'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'coke', src: 'http://www.coca-colaproductfacts.com/content/dam/productfacts/us/productDetails/ProductImages/Coke_20oz.png', alt: 'coke' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Coke',
-                  _react2.default.createElement('br', null),
-                  '$4.00/600ml bottle'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'apple', src: 'http://www.chelanfresh.com/hs-fs/hubfs/Images/gala-apple-chelan-fresh.png?t=1499788946371&width=238&height=301&name=gala-apple-chelan-fresh.png', alt: 'apple' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Apple',
-                  _react2.default.createElement('br', null),
-                  '$3.00/kg'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'cornetto', src: 'http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png', alt: 'cornetto' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Cornetto',
-                  _react2.default.createElement('br', null),
-                  '$3.00/kg'
-                )
+                "div",
+                { className: "food-price col-xs-6" },
+                "Milk | $2.83/Litre"
               )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "chicken", src: "https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450", alt: "chicken breast" }),
+                _react2.default.createElement("img", { id: "chicken", src: "https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450", alt: "chicken breast" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Chicken breast | $1.70/100g"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" }),
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" }),
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Potato | $5.00/2kg"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "broccoli", src: "https://www.myjuicecleanse.com/wp-content/uploads/2013/07/broccoli-med.png", alt: "broccoli" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Broccoli | $2.79/head"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "apple", src: "http://www.chelanfresh.com/hs-fs/hubfs/Images/gala-apple-chelan-fresh.png?t=1499788946371&width=238&height=301&name=gala-apple-chelan-fresh.png", alt: "apple" }),
+                _react2.default.createElement("img", { id: "apple", src: "http://www.chelanfresh.com/hs-fs/hubfs/Images/gala-apple-chelan-fresh.png?t=1499788946371&width=238&height=301&name=gala-apple-chelan-fresh.png", alt: "apple" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Apple | $3.00/1kg"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "coke", src: "http://www.coca-colaproductfacts.com/content/dam/productfacts/us/productDetails/ProductImages/Coke_20oz.png", alt: "coke" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Coke | $4.00/bottle(600ml)"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "beer", src: "http://www.kingdomliquor.com/wp-content/uploads/2014/10/Heineken-Bottle.png", alt: "beer" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Heineken | $6.69/bottle(650ml)"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "cornetto", src: "http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png", alt: "icecream" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Cornetto | $2/each"
+              )
+            ),
+            _react2.default.createElement("div", { className: "divider" }),
+            _react2.default.createElement(
+              "h4",
+              { className: "total" },
+              "Total cost = $31.01 | 2 hours salary = $31.5"
             )
           ),
           _react2.default.createElement(
-            'div',
-            { className: 'col-md-12' },
+            "div",
+            { className: "col-md-4" },
             _react2.default.createElement(
-              'h2',
+              "h2",
               null,
-              'Australia'
+              "Australia \uD83C\uDDE6\uD83C\uDDFA "
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'row' },
+              "h5",
+              null,
+              "Minimum wage: ",
               _react2.default.createElement(
-                'div',
-                { className: 'col-md-3' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Minimum wage: $18.29 ',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'https://www.fairwork.gov.au/how-we-will-help/templates-and-guides/fact-sheets/minimum-workplace-entitlements/minimum-wages#current-national-minimum-wage' },
-                      'source'
-                    )
-                  )
-                )
-              ),
+                "a",
+                { href: "https://www.govt.nz/browse/work/workers-rights/minimum-wage-in-new-zealand/" },
+                "$",
+                18.29 * X,
+                "/hour"
+              )
+            ),
+            _react2.default.createElement("div", { className: "divider" }),
+            _react2.default.createElement(
+              "p",
+              { className: "text-center" },
               _react2.default.createElement(
-                'div',
-                { className: 'col-md-2' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Weekly income: $',
-                  Math.round(18.29 * 40)
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-md-4' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'A week\'s rent in Melbourne: $',
-                  31 * 7,
-                  ' ',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'https://www.yha.com.au/hostels/responsive-booking-steps/?hostelCode=MELC&startDate=28/08/2017&endDate=29/08/2017' },
-                      'source'
-                    )
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-md-3' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Budget per meal: $',
-                  Math.round((18.29 * 40 - 31 * 7) / 7 / 3)
-                )
+                "a",
+                { href: "https://www.woolworths.com.au/shop/search" },
+                "Shopping Receipt"
               )
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'row' },
+              "div",
+              { className: "row" },
               _react2.default.createElement(
-                'div',
-                { className: 'col-md-12' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Shopping Bag  | Total Price: $24.6 ',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'https://www.woolworths.com.au/shop/search/products?searchTerm=apple&sortBy=PriceAsc' },
-                      'source'
-                    )
-                  )
-                )
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "bread", src: "https://s-media-cache-ak0.pinimg.com/originals/7c/a1/4e/7ca14e8de6f19d4e01e28b1527d3538c.png", alt: "bread" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Bread | $",
+                0.85 * X,
+                "/bag(650g)"
               )
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'row plate' },
+              "div",
+              { className: "row" },
               _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'food-image' },
-                  _react2.default.createElement('img', { id: 'chicken', src: 'https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450', alt: 'chicken breast' }),
-                  _react2.default.createElement('img', { id: 'chicken', src: 'https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450', alt: 'chicken breast' })
-                ),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Chicken',
-                  _react2.default.createElement('br', null),
-                  '$1.10/100G '
-                )
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "milk", src: "https://www.anchor.co.nz/app/uploads/2017/04/10351_Anchor_2L_Blue2.png", alt: "milk" })
               ),
               _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'potato', src: 'https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300', alt: 'potato' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Potato',
-                  _react2.default.createElement('br', null),
-                  '$2/1000G'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'food-image' },
-                  _react2.default.createElement('img', { id: 'bread', src: 'http://i.imgur.com/XiaV9TH.png', alt: 'bread' }),
-                  _react2.default.createElement('img', { id: 'bread', src: 'http://i.imgur.com/XiaV9TH.png', alt: 'bread' })
-                ),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Bread',
-                  _react2.default.createElement('br', null),
-                  '$1.00/600G'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'milk', src: 'http://www.charlamahon.com/wp-content/uploads/2016/01/Glass-of-Milk.png', alt: 'milk' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Milk',
-                  _react2.default.createElement('br', null),
-                  '$1.98/1L'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'beer', src: 'http://www.kingdomliquor.com/wp-content/uploads/2014/10/Heineken-Bottle.png', alt: 'beer' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Beer',
-                  _react2.default.createElement('br', null),
-                  '$4.99/500ML'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'broccoli', src: 'https://www.myjuicecleanse.com/wp-content/uploads/2013/07/broccoli-med.png', alt: 'broccoli' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Brocolli',
-                  _react2.default.createElement('br', null),
-                  '$2.79/head'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'food-image' },
-                  _react2.default.createElement('img', { id: 'coke', src: 'http://www.coca-colaproductfacts.com/content/dam/productfacts/us/productDetails/ProductImages/Coke_20oz.png', alt: 'coke' }),
-                  _react2.default.createElement('img', { id: 'coke', src: 'http://www.coca-colaproductfacts.com/content/dam/productfacts/us/productDetails/ProductImages/Coke_20oz.png', alt: 'coke' })
-                ),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Coke',
-                  _react2.default.createElement('br', null),
-                  '$4.00/600ml bottle'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'apple', src: 'http://www.chelanfresh.com/hs-fs/hubfs/Images/gala-apple-chelan-fresh.png?t=1499788946371&width=238&height=301&name=gala-apple-chelan-fresh.png', alt: 'apple' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Apple',
-                  _react2.default.createElement('br', null),
-                  '$3.00/kg'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement(
-                  'div',
-                  { classNama: 'food-image' },
-                  _react2.default.createElement('img', { id: 'cornetto', src: 'http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png', alt: 'cornetto' }),
-                  _react2.default.createElement('img', { id: 'cornetto', src: 'http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png', alt: 'cornetto' })
-                ),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Cornetto',
-                  _react2.default.createElement('br', null),
-                  '$3.00/kg'
-                )
+                "div",
+                { className: "food-price col-xs-6" },
+                "Milk | $",
+                1.2 * X,
+                "/Litre"
               )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "chicken", src: "https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450", alt: "chicken breast" }),
+                _react2.default.createElement("img", { id: "chicken", src: "https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450", alt: "chicken breast" }),
+                _react2.default.createElement("img", { id: "chicken", src: "https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450", alt: "chicken breast" }),
+                _react2.default.createElement("img", { id: "chicken", src: "https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450", alt: "chicken breast" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Chicken breast | $",
+                0.85 * X,
+                "/100g"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" }),
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" }),
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" }),
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Potato | $",
+                5.50 * X,
+                "/2kg"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "broccoli", src: "https://www.myjuicecleanse.com/wp-content/uploads/2013/07/broccoli-med.png", alt: "broccoli" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Broccoli | $",
+                1.47 * X,
+                "/head"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "apple", src: "http://www.chelanfresh.com/hs-fs/hubfs/Images/gala-apple-chelan-fresh.png?t=1499788946371&width=238&height=301&name=gala-apple-chelan-fresh.png", alt: "apple" }),
+                _react2.default.createElement("img", { id: "apple", src: "http://www.chelanfresh.com/hs-fs/hubfs/Images/gala-apple-chelan-fresh.png?t=1499788946371&width=238&height=301&name=gala-apple-chelan-fresh.png", alt: "apple" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Apple | $",
+                3.90 * X,
+                "/1kg"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "coke", src: "http://www.coca-colaproductfacts.com/content/dam/productfacts/us/productDetails/ProductImages/Coke_20oz.png", alt: "coke" }),
+                _react2.default.createElement("img", { id: "coke", src: "http://www.coca-colaproductfacts.com/content/dam/productfacts/us/productDetails/ProductImages/Coke_20oz.png", alt: "coke" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Coke | $",
+                Math.round(3.39 * X),
+                "/bottle(600ml)"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "beer", src: "http://www.kingdomliquor.com/wp-content/uploads/2014/10/Heineken-Bottle.png", alt: "beer" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Heineken | $",
+                Math.round(6.50 * X),
+                "/bottle(650ml)"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "cornetto", src: "http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png", alt: "icecream" }),
+                _react2.default.createElement("img", { id: "cornetto", src: "http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png", alt: "icecream" }),
+                _react2.default.createElement("img", { id: "cornetto", src: "http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png", alt: "icecream" }),
+                _react2.default.createElement("img", { id: "cornetto", src: "http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png", alt: "icecream" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Cornetto | $",
+                7 * X,
+                "/4 cones"
+              )
+            ),
+            _react2.default.createElement("div", { className: "divider" }),
+            _react2.default.createElement(
+              "h4",
+              { className: "total" },
+              "Total cost = $",
+              Math.round(36.43 * X),
+              " | 2 hours salary = ",
+              Math.round(36.58 * X),
+              " "
             )
           ),
           _react2.default.createElement(
-            'div',
-            { className: 'col-md-12' },
+            "div",
+            { className: "col-md-4" },
             _react2.default.createElement(
-              'h2',
+              "h2",
               null,
-              'England'
+              "UK \uD83C\uDDEC\uD83C\uDDE7 "
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'row' },
+              "h5",
+              null,
+              "Minimum wage: ",
               _react2.default.createElement(
-                'div',
-                { className: 'col-md-3' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Minimum wage: \xA37.50 ',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'https://www.gov.uk/national-minimum-wage-rates' },
-                      'source'
-                    )
-                  )
-                )
-              ),
+                "a",
+                { href: "https://www.govt.nz/browse/work/workers-rights/minimum-wage-in-new-zealand/" },
+                "$",
+                Math.round(7.5 * Y),
+                "/hour"
+              )
+            ),
+            _react2.default.createElement("div", { className: "divider" }),
+            _react2.default.createElement(
+              "p",
+              { className: "text-center" },
               _react2.default.createElement(
-                'div',
-                { className: 'col-md-2' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Weekly income: \xA3',
-                  Math.round(7.50 * 40)
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-md-4' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'A week\'s rent in London: \xA3',
-                  18 * 7,
-                  ' ',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'http://www.yha.org.uk/hostel/london-central' },
-                      'source'
-                    )
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-md-3' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Budget per meal: \xA3',
-                  Math.round((7.5 * 40 - 18 * 7) / 7 / 3)
-                )
+                "a",
+                { href: "https://www.tesco.com/groceries/product/search" },
+                "Shopping Receipt"
               )
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'row' },
+              "div",
+              { className: "row" },
               _react2.default.createElement(
-                'div',
-                { className: 'col-md-12' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Shopping Bag  | Total Price: \xA38 ',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'https://www.tesco.com/groceries/product/search/default.aspx?searchBox=chicken%20breast&icid=tescohp_sws-1_chicken%20breast' },
-                      'source'
-                    )
-                  )
-                )
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "bread", src: "https://s-media-cache-ak0.pinimg.com/originals/7c/a1/4e/7ca14e8de6f19d4e01e28b1527d3538c.png", alt: "bread" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Bread | $",
+                0.5 * Y,
+                "/bag(800g)"
               )
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'row plate' },
+              "div",
+              { className: "row" },
               _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'food-image' },
-                  _react2.default.createElement('img', { id: 'chicken', src: 'https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450', alt: 'chicken breast' }),
-                  _react2.default.createElement('img', { id: 'chicken', src: 'https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450', alt: 'chicken breast' })
-                ),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Chicken',
-                  _react2.default.createElement('br', null),
-                  '$1.10/100G '
-                )
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "milk", src: "https://www.anchor.co.nz/app/uploads/2017/04/10351_Anchor_2L_Blue2.png", alt: "milk" })
               ),
               _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement(
-                  'div',
-                  { classNama: 'food-image' },
-                  _react2.default.createElement('img', { id: 'potato', src: 'https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300', alt: 'potato' }),
-                  _react2.default.createElement('img', { id: 'potato', src: 'https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300', alt: 'potato' })
-                ),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Potato',
-                  _react2.default.createElement('br', null),
-                  '$2/1000G'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'food-image' },
-                  _react2.default.createElement('img', { id: 'bread', src: 'http://i.imgur.com/XiaV9TH.png', alt: 'bread' }),
-                  _react2.default.createElement('img', { id: 'bread', src: 'http://i.imgur.com/XiaV9TH.png', alt: 'bread' })
-                ),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Bread',
-                  _react2.default.createElement('br', null),
-                  '$1.00/600G'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'milk', src: 'http://www.charlamahon.com/wp-content/uploads/2016/01/Glass-of-Milk.png', alt: 'milk' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Milk',
-                  _react2.default.createElement('br', null),
-                  '$1.98/1L'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'beer', src: 'http://www.kingdomliquor.com/wp-content/uploads/2014/10/Heineken-Bottle.png', alt: 'beer' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Beer',
-                  _react2.default.createElement('br', null),
-                  '$4.99/500ML'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'broccoli', src: 'https://www.myjuicecleanse.com/wp-content/uploads/2013/07/broccoli-med.png', alt: 'broccoli' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Brocolli',
-                  _react2.default.createElement('br', null),
-                  '$2.79/head'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'food-image' },
-                  _react2.default.createElement('img', { id: 'coke', src: 'http://www.coca-colaproductfacts.com/content/dam/productfacts/us/productDetails/ProductImages/Coke_20oz.png', alt: 'coke' })
-                ),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Coke',
-                  _react2.default.createElement('br', null),
-                  '$4.00/600ml bottle'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'apple', src: 'http://www.chelanfresh.com/hs-fs/hubfs/Images/gala-apple-chelan-fresh.png?t=1499788946371&width=238&height=301&name=gala-apple-chelan-fresh.png', alt: 'apple' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Apple',
-                  _react2.default.createElement('br', null),
-                  '$3.00/kg'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'food-item', onMouseOver: this.onHover.bind(this), onMouseLeave: this.onLeave.bind(this), onClick: this.onClick.bind(this) },
-                _react2.default.createElement('img', { id: 'cornetto', src: 'http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png', alt: 'cornetto' }),
-                this.state.showPrice && _react2.default.createElement(
-                  'p',
-                  null,
-                  'Cornetto',
-                  _react2.default.createElement('br', null),
-                  '$3.00/kg'
-                )
+                "div",
+                { className: "food-price col-xs-6" },
+                "Milk | $",
+                0.75 * Y,
+                "/Litre"
               )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "chicken", src: "https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450", alt: "chicken breast" }),
+                _react2.default.createElement("img", { id: "chicken", src: "https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450", alt: "chicken breast" }),
+                _react2.default.createElement("img", { id: "chicken", src: "https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450", alt: "chicken breast" }),
+                _react2.default.createElement("img", { id: "chicken", src: "https://vignette1.wikia.nocookie.net/dayz-standalone/images/6/65/Cooked_Chicken_Breast.png/revision/latest?cb=20150701111450", alt: "chicken breast" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Chicken breast | $",
+                0.527 * Y,
+                "/100g"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" }),
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" }),
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" }),
+                _react2.default.createElement("img", { id: "potato", src: "https://lh5.ggpht.com/9UDY3O4wSwlBm-kHHfjKf85Yk5GCt0nckL5ZdMR-nYotAfNjODvR4sZ-scPXG3ABVF65=w300", alt: "potato" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Potato | $",
+                1.29 * Y / 2.5 * 2,
+                "/2kg"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "broccoli", src: "https://www.myjuicecleanse.com/wp-content/uploads/2013/07/broccoli-med.png", alt: "broccoli" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Broccoli | $",
+                0.5 * Y,
+                "/head"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "apple", src: "http://www.chelanfresh.com/hs-fs/hubfs/Images/gala-apple-chelan-fresh.png?t=1499788946371&width=238&height=301&name=gala-apple-chelan-fresh.png", alt: "apple" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Apple | $",
+                2 * Y,
+                "/1kg"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "coke", src: "http://www.coca-colaproductfacts.com/content/dam/productfacts/us/productDetails/ProductImages/Coke_20oz.png", alt: "coke" }),
+                _react2.default.createElement("img", { id: "coke", src: "http://www.coca-colaproductfacts.com/content/dam/productfacts/us/productDetails/ProductImages/Coke_20oz.png", alt: "coke" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Coke | $",
+                Math.round(1.25 * Y),
+                "/bottle(500ml)"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "beer", src: "http://www.kingdomliquor.com/wp-content/uploads/2014/10/Heineken-Bottle.png", alt: "beer" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Heineken | $",
+                Math.round(2 * Y),
+                "/bottle(650ml)"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "food-item col-xs-6" },
+                _react2.default.createElement("img", { id: "cornetto", src: "http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png", alt: "icecream" }),
+                _react2.default.createElement("img", { id: "cornetto", src: "http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png", alt: "icecream" }),
+                _react2.default.createElement("img", { id: "cornetto", src: "http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png", alt: "icecream" }),
+                _react2.default.createElement("img", { id: "cornetto", src: "http://www.wallsthailand.com/Resources/Images/CornettoClassicVanilla1838-1005832.png", alt: "icecream" })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "food-price col-xs-6" },
+                "Cornetto | $",
+                2 * Y,
+                "/4 cones"
+              )
+            ),
+            _react2.default.createElement("div", { className: "divider" }),
+            _react2.default.createElement(
+              "h4",
+              { className: "total" },
+              "Total cost = $",
+              Math.round(15 * Y),
+              " | 2 hours salary = ",
+              Math.round(15 * Y),
+              " "
             )
           )
         )
@@ -13049,9 +12941,7 @@ var Plates = function (_React$Component) {
   return Plates;
 }(_react2.default.Component);
 
-var mapStateToProps = function mapStateToProps(state) {};
-
-exports.default = (0, _reactRedux.connect)(mapStateToProps)(Plates);
+exports.default = Plates;
 
 /***/ }),
 /* 114 */
@@ -13064,9 +12954,9 @@ var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(111);
+var _reactDom = __webpack_require__(110);
 
-var _reactRedux = __webpack_require__(63);
+var _reactRedux = __webpack_require__(111);
 
 var _redux = __webpack_require__(38);
 
@@ -13074,11 +12964,11 @@ var _reduxThunk = __webpack_require__(112);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-var _reducers = __webpack_require__(110);
+var _reducers = __webpack_require__(109);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _App = __webpack_require__(109);
+var _App = __webpack_require__(108);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -14771,7 +14661,7 @@ var _createTransitionManager = __webpack_require__(41);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(67);
+var _DOMUtils = __webpack_require__(66);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15082,7 +14972,7 @@ var _createTransitionManager = __webpack_require__(41);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(67);
+var _DOMUtils = __webpack_require__(66);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15566,7 +15456,7 @@ exports.default = createMemoryHistory;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(138);
 
@@ -15609,7 +15499,7 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 /* harmony default export */ __webpack_exports__["a"] = (freeGlobal);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(108)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(107)))
 
 /***/ }),
 /* 136 */
@@ -15630,7 +15520,7 @@ var getPrototype = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__overArg_js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(68);
 
 
 /** Used for built-in method references. */
@@ -16016,7 +15906,7 @@ module.exports = ARIADOMPropertyConfig;
 
 var ReactDOMComponentTree = __webpack_require__(5);
 
-var focusNode = __webpack_require__(65);
+var focusNode = __webpack_require__(64);
 
 var AutoFocusUtils = {
   focusDOMComponent: function () {
@@ -16432,7 +16322,7 @@ module.exports = BeforeInputEventPlugin;
 
 
 
-var CSSProperty = __webpack_require__(72);
+var CSSProperty = __webpack_require__(71);
 var ExecutionEnvironment = __webpack_require__(7);
 var ReactInstrumentation = __webpack_require__(11);
 
@@ -16660,10 +16550,10 @@ var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(13);
 var SyntheticEvent = __webpack_require__(15);
 
-var inputValueTracking = __webpack_require__(89);
+var inputValueTracking = __webpack_require__(88);
 var getEventTarget = __webpack_require__(55);
 var isEventSupported = __webpack_require__(56);
-var isTextInputElement = __webpack_require__(91);
+var isTextInputElement = __webpack_require__(90);
 
 var eventTypes = {
   change: {
@@ -17160,7 +17050,7 @@ var _assign = __webpack_require__(4);
 
 var PooledClass = __webpack_require__(17);
 
-var getTextContentAccessor = __webpack_require__(88);
+var getTextContentAccessor = __webpack_require__(87);
 
 /**
  * This helper class stores information about text content of a target node,
@@ -17499,10 +17389,10 @@ module.exports = HTMLDOMPropertyConfig;
 
 var ReactReconciler = __webpack_require__(21);
 
-var instantiateReactComponent = __webpack_require__(90);
+var instantiateReactComponent = __webpack_require__(89);
 var KeyEscapeUtils = __webpack_require__(47);
 var shouldUpdateReactComponent = __webpack_require__(57);
-var traverseAllChildren = __webpack_require__(93);
+var traverseAllChildren = __webpack_require__(92);
 var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
@@ -17698,7 +17588,7 @@ var ReactCurrentOwner = __webpack_require__(14);
 var ReactErrorUtils = __webpack_require__(50);
 var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(11);
-var ReactNodeTypes = __webpack_require__(82);
+var ReactNodeTypes = __webpack_require__(81);
 var ReactReconciler = __webpack_require__(21);
 
 if (process.env.NODE_ENV !== 'production') {
@@ -18599,13 +18489,13 @@ module.exports = ReactCompositeComponent;
 
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDefaultInjection = __webpack_require__(174);
-var ReactMount = __webpack_require__(81);
+var ReactMount = __webpack_require__(80);
 var ReactReconciler = __webpack_require__(21);
 var ReactUpdates = __webpack_require__(13);
 var ReactVersion = __webpack_require__(189);
 
 var findDOMNode = __webpack_require__(206);
-var getHostComponentFromComposite = __webpack_require__(87);
+var getHostComponentFromComposite = __webpack_require__(86);
 var renderSubtreeIntoContainer = __webpack_require__(213);
 var warning = __webpack_require__(2);
 
@@ -18722,15 +18612,15 @@ var CSSPropertyOperations = __webpack_require__(147);
 var DOMLazyTree = __webpack_require__(20);
 var DOMNamespaces = __webpack_require__(45);
 var DOMProperty = __webpack_require__(16);
-var DOMPropertyOperations = __webpack_require__(74);
+var DOMPropertyOperations = __webpack_require__(73);
 var EventPluginHub = __webpack_require__(26);
 var EventPluginRegistry = __webpack_require__(31);
 var ReactBrowserEventEmitter = __webpack_require__(32);
-var ReactDOMComponentFlags = __webpack_require__(75);
+var ReactDOMComponentFlags = __webpack_require__(74);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMInput = __webpack_require__(163);
 var ReactDOMOption = __webpack_require__(166);
-var ReactDOMSelect = __webpack_require__(76);
+var ReactDOMSelect = __webpack_require__(75);
 var ReactDOMTextarea = __webpack_require__(169);
 var ReactInstrumentation = __webpack_require__(11);
 var ReactMultiChild = __webpack_require__(182);
@@ -18741,7 +18631,7 @@ var escapeTextContentForBrowser = __webpack_require__(35);
 var invariant = __webpack_require__(1);
 var isEventSupported = __webpack_require__(56);
 var shallowEqual = __webpack_require__(39);
-var inputValueTracking = __webpack_require__(89);
+var inputValueTracking = __webpack_require__(88);
 var validateDOMNesting = __webpack_require__(58);
 var warning = __webpack_require__(2);
 
@@ -19897,7 +19787,7 @@ module.exports = ReactDOMIDOperations;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var DOMPropertyOperations = __webpack_require__(74);
+var DOMPropertyOperations = __webpack_require__(73);
 var LinkedValueUtils = __webpack_require__(48);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(13);
@@ -20339,7 +20229,7 @@ var _assign = __webpack_require__(4);
 
 var React = __webpack_require__(22);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMSelect = __webpack_require__(76);
+var ReactDOMSelect = __webpack_require__(75);
 
 var warning = __webpack_require__(2);
 var didWarnInvalidOptionChildren = false;
@@ -20466,7 +20356,7 @@ module.exports = ReactDOMOption;
 var ExecutionEnvironment = __webpack_require__(7);
 
 var getNodeForCharacterOffset = __webpack_require__(210);
-var getTextContentAccessor = __webpack_require__(88);
+var getTextContentAccessor = __webpack_require__(87);
 
 /**
  * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -21869,7 +21759,7 @@ module.exports = ReactEventEmitterMixin;
 
 var _assign = __webpack_require__(4);
 
-var EventListener = __webpack_require__(64);
+var EventListener = __webpack_require__(63);
 var ExecutionEnvironment = __webpack_require__(7);
 var PooledClass = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(5);
@@ -22070,9 +21960,9 @@ var DOMProperty = __webpack_require__(16);
 var EventPluginHub = __webpack_require__(26);
 var EventPluginUtils = __webpack_require__(46);
 var ReactComponentEnvironment = __webpack_require__(49);
-var ReactEmptyComponent = __webpack_require__(77);
+var ReactEmptyComponent = __webpack_require__(76);
 var ReactBrowserEventEmitter = __webpack_require__(32);
-var ReactHostComponent = __webpack_require__(79);
+var ReactHostComponent = __webpack_require__(78);
 var ReactUpdates = __webpack_require__(13);
 
 var ReactInjection = {
@@ -22787,10 +22677,10 @@ module.exports = ReactPropTypeLocationNames;
 
 var _assign = __webpack_require__(4);
 
-var CallbackQueue = __webpack_require__(73);
+var CallbackQueue = __webpack_require__(72);
 var PooledClass = __webpack_require__(17);
 var ReactBrowserEventEmitter = __webpack_require__(32);
-var ReactInputSelection = __webpack_require__(80);
+var ReactInputSelection = __webpack_require__(79);
 var ReactInstrumentation = __webpack_require__(11);
 var Transaction = __webpack_require__(34);
 var ReactUpdateQueue = __webpack_require__(51);
@@ -23633,11 +23523,11 @@ module.exports = SVGDOMPropertyConfig;
 var EventPropagators = __webpack_require__(27);
 var ExecutionEnvironment = __webpack_require__(7);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactInputSelection = __webpack_require__(80);
+var ReactInputSelection = __webpack_require__(79);
 var SyntheticEvent = __webpack_require__(15);
 
-var getActiveElement = __webpack_require__(66);
-var isTextInputElement = __webpack_require__(91);
+var getActiveElement = __webpack_require__(65);
+var isTextInputElement = __webpack_require__(90);
 var shallowEqual = __webpack_require__(39);
 
 var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
@@ -23826,7 +23716,7 @@ module.exports = SelectEventPlugin;
 
 var _prodInvariant = __webpack_require__(3);
 
-var EventListener = __webpack_require__(64);
+var EventListener = __webpack_require__(63);
 var EventPropagators = __webpack_require__(27);
 var ReactDOMComponentTree = __webpack_require__(5);
 var SyntheticAnimationEvent = __webpack_require__(193);
@@ -24598,7 +24488,7 @@ module.exports = adler32;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactPropTypeLocationNames = __webpack_require__(184);
-var ReactPropTypesSecret = __webpack_require__(83);
+var ReactPropTypesSecret = __webpack_require__(82);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -24688,7 +24578,7 @@ module.exports = checkReactTypeSpec;
 
 
 
-var CSSProperty = __webpack_require__(72);
+var CSSProperty = __webpack_require__(71);
 var warning = __webpack_require__(2);
 
 var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -24779,7 +24669,7 @@ var ReactCurrentOwner = __webpack_require__(14);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstanceMap = __webpack_require__(28);
 
-var getHostComponentFromComposite = __webpack_require__(87);
+var getHostComponentFromComposite = __webpack_require__(86);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -24841,7 +24731,7 @@ module.exports = findDOMNode;
 
 
 var KeyEscapeUtils = __webpack_require__(47);
-var traverseAllChildren = __webpack_require__(93);
+var traverseAllChildren = __webpack_require__(92);
 var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
@@ -25300,7 +25190,7 @@ module.exports = quoteAttributeValueForBrowser;
 
 
 
-var ReactMount = __webpack_require__(81);
+var ReactMount = __webpack_require__(80);
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
@@ -25314,7 +25204,7 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_PropTypes__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_PropTypes__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warning__ = __webpack_require__(59);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -25397,7 +25287,7 @@ function createProvider() {
 
 "use strict";
 /* unused harmony export createConnect */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(217);
@@ -25516,7 +25406,7 @@ function createConnect() {
 /* unused harmony export whenMapDispatchToPropsIsMissing */
 /* unused harmony export whenMapDispatchToPropsIsObject */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(94);
 
 
 
@@ -25545,7 +25435,7 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
 "use strict";
 /* unused harmony export whenMapStateToPropsIsFunction */
 /* unused harmony export whenMapStateToPropsIsMissing */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(94);
 
 
 function whenMapStateToPropsIsFunction(mapStateToProps) {
@@ -25569,7 +25459,7 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
 /* unused harmony export wrapMergePropsFunc */
 /* unused harmony export whenMergePropsIsFunction */
 /* unused harmony export whenMergePropsIsOmitted */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(96);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -26026,7 +25916,7 @@ HashRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(97);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -26157,7 +26047,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(224);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(97);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(225);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
@@ -26727,9 +26617,9 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(98);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -27608,7 +27498,7 @@ var ReactElement = __webpack_require__(18);
  */
 var createDOMFactory = ReactElement.createFactory;
 if (process.env.NODE_ENV !== 'production') {
-  var ReactElementValidator = __webpack_require__(102);
+  var ReactElementValidator = __webpack_require__(101);
   createDOMFactory = ReactElementValidator.createFactory;
 }
 
@@ -27808,7 +27698,7 @@ module.exports = ReactPropTypeLocationNames;
 var _require = __webpack_require__(18),
     isValidElement = _require.isValidElement;
 
-var factory = __webpack_require__(70);
+var factory = __webpack_require__(69);
 
 module.exports = factory(isValidElement);
 
@@ -27963,13 +27853,13 @@ module.exports = checkReactTypeSpec;
 
 
 
-var _require = __webpack_require__(100),
+var _require = __webpack_require__(99),
     Component = _require.Component;
 
 var _require2 = __webpack_require__(18),
     isValidElement = _require2.isValidElement;
 
-var ReactNoopUpdateQueue = __webpack_require__(103);
+var ReactNoopUpdateQueue = __webpack_require__(102);
 var factory = __webpack_require__(116);
 
 module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
@@ -28064,9 +27954,9 @@ module.exports = onlyChild;
 var _prodInvariant = __webpack_require__(23);
 
 var ReactCurrentOwner = __webpack_require__(14);
-var REACT_ELEMENT_TYPE = __webpack_require__(101);
+var REACT_ELEMENT_TYPE = __webpack_require__(100);
 
-var getIteratorFn = __webpack_require__(104);
+var getIteratorFn = __webpack_require__(103);
 var invariant = __webpack_require__(1);
 var KeyEscapeUtils = __webpack_require__(244);
 var warning = __webpack_require__(2);
@@ -28232,7 +28122,7 @@ module.exports = traverseAllChildren;
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = applyMiddleware;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(104);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -28342,9 +28232,9 @@ function bindActionCreators(actionCreators, dispatch) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = combineReducers;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(106);
 
 
 
@@ -28594,7 +28484,7 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(108), __webpack_require__(265)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(107), __webpack_require__(265)(module)))
 
 /***/ }),
 /* 263 */

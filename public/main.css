@@ -1,6 +1,13 @@
 .page-header{
   margin-left: 10px;
 }
+#sub-header{
+  display: block;
+  text-align: center;
+}
+.divider{
+  border-bottom: 1px solid #eee;
+}
 .plate{
   border-radius: 5px;
   border: solid black 2px;
@@ -10,23 +17,17 @@
   display: flex;
 }
 .food-item img{
-  height:70px;
+  height:50px;
 }
-#chicken{
-  height:80px;
-  width: 50px;
-  margin-right: 10px;
+.food-price{
+  font-size: 12px;
 }
-#coke{
-  margin-right: 10px;
+#potato{
+  margin-right: -5px;
+  margin-left: -10px;
 }
-#bread, #potato{
-  margin-right: -6px;
-}
-#beer{
-  height:80px;
-}
-#coke{
-  margin-left: 10px;
-  height:80px;
+.total{
+  display: block;
+  text-align: center;
+  color:darkgreen;
 }
